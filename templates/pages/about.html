@@ -1,0 +1,99 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block title %} | About Us {% endblock %}
+
+{% block content %}
+<div style="background-color: rgba(235, 16, 188, 0.123);">
+<section id="showcase-inner" class="py-5 text-black">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">About Nexus Real Estate</h1>
+          <p class="lead" style="font-weight:bold"> Launched in 2022, Nexus-Global.com, India’s No. 1 property portal, deals with every aspect of the consumers’ needs in the real estate industry. It is an online forum where buyers, sellers and brokers/agents can exchange information about real estate properties quickly, effectively and inexpensively. At 99acres.com, you can advertise a property, search for a property, browse through properties, build your own property microsite, and keep yourself updated with the latest news and trends making headlines in the realty sector</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> About</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>We Search For The Perfect Home</h2>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+          <img src="{% static 'img/about.jpg' %}" alt="">
+          <p class="mt-4">Our philosophy is simple: clients come first. We pledge to be in constant communication with our clients, keeping them fully informed throughout the entire buying or selling process. We believe that if you’re not left with an amazing experience, we haven’t done our job. We don’t measure success through achievements or awards, but through the satisfaction of our clients..</p>
+        </div>
+        <div class="col-md-4">
+          {% if mvp_realtors %}
+            {% for realtor in mvp_realtors %}
+            <div class="card">
+                <img class="card-img-top" src="{{ realtor.photo.url }}" alt="Seller of the month">
+                <div class="card-body">
+                  <h5 class="card-title">Seller Of The Month</h5>
+                  <h6 class="text-secondary">{{ realtor.name }}</h6>
+                  <p class="card-text">{{ realtor.description }}
+                  </p>
+                </div>
+              </div>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="bg-dark text-white text-center">
+    <h2 class="display-4">We Work For You</h2>
+    <h4>We are your go-to source for real estate industry insight and advice.</h4>
+    <hr>
+    <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Our Realtors</h2>
+      <div class="row text-center">
+        {% if realtors %}
+          {% for realtor in realtors %}
+          <div class="col-md-4">
+              <img src="{{ realtor.photo.url }}" alt="" class="rounded-circle mb-3">
+              <h4>{{ realtor.name }}</h4>
+              <p class="text-success">
+                <i class="fas fa-award text-success mb-3"></i> Realtor</p>
+              <hr>
+              <p>
+                <i class="fas fa-phone"></i> {{ realtor.phone }}</p>
+              <p>
+                <i class="fas fa-envelope-open"></i> {{ realtor.email }}</p>
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="col-md-12">
+            <p>No Realtors Available</p>
+          </div>
+        {% endif %}       
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
