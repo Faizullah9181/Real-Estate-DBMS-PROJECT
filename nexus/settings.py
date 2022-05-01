@@ -157,5 +157,5 @@ except ImportError:
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER='gtxgeforce5000@gmail.com' # put your email address
-EMAIL_HOST_PASSWORD='1234567890mnbvcxz' # put your email address password
+EMAIL_HOST_PASSWORD='***************' # put your email address password
 EMAIL_USE_TLS=True
