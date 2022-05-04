@@ -5,12 +5,12 @@
 
 
 ## Important Highlights Of project
-•	Customize Admin Panel To CREATE,READ,UPDATE,DELETE Listings,Realtors,Contact Inquiries
-•	Admin Can Decide to publish listing on website or not 
-•	Admin Can make Realtor MVP 
-•	Users Can search Listings according To their needs 
-•	If Users are interested in any property they can fill the inquiry form
-•	The form details will be shown in admin panel and email will be sent to assign Realtor of that property
+- Customize Admin Panel To CREATE,READ,UPDATE,DELETE Listings,Realtors,Contact Inquiries
+- Admin Can Decide to publish listing on website or not 
+- Admin Can make Realtor MVP 
+- Users Can search Listings according To their needs 
+- If Users are interested in any property they can fill the inquiry form
+- The form details will be shown in admin panel and email will be sent to assign Realtor of that property
 
  ## Live Link :- https://nexus-global.herokuapp.com/
  
