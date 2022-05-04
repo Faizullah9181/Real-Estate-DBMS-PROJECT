@@ -1,6 +1,6 @@
 # Real-Estate-DBMS-PROJECT
 
-## Fontend in HTML/CSS and Bootstrap and Backend in Django
+## Frontend in HTML/CSS and Bootstrap and Backend in Django
 
 
 
