@@ -5,7 +5,7 @@
 
 
 ## Important Highlights Of project
-- Customize Admin Panel To CREATE,READ,UPDATE,DELETE Listings,Realtors,Contact Inquiries
+- Customized Admin Panel To CREATE,READ,UPDATE,DELETE Listings,Realtors,Contact Inquiries
 - Admin Can Decide to publish listing on website or not 
 - Admin Can make Realtor MVP 
 - Users Can search Listings according To their needs 
