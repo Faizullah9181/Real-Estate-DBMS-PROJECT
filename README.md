@@ -1,6 +1,6 @@
 # Real-Estate-DBMS-PROJECT
 
-## Frontend in HTML/CSS and Bootstrap and Backend in Django
+## Frontend in HTML/CSS,Bootstrap and Backend in Django
 
 
 
@@ -25,3 +25,6 @@
  - 20BCS016 Atif Ahmad
  - 20BEE043 Shahnawaj Alam
  - 20BEE064 Syed Haider Abbas
+
+
+
