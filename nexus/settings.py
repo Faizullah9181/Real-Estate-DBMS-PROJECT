@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'cloudinary_storage',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -145,6 +147,8 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 # Messages
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
@@ -164,6 +168,16 @@ except ImportError:
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER='gtxgeforce5000@gmail.com' # put your email address
+EMAIL_HOST_USER='.............' # put your email address
 EMAIL_HOST_PASSWORD='***************' # put your email address password
 EMAIL_USE_TLS=True
+
+
+
+CLOUDINARY_STORAGE={
+
+'CLOUD_NAME':'',
+'API_KEY':'',
+'API_SECRET':'',
+
+}
