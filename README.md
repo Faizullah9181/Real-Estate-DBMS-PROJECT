@@ -12,7 +12,7 @@
 - If Users are interested in any property they can fill the inquiry form
 - The form details will be shown in admin panel and email will be sent to assign Realtor of that property
 
- ## Live Link :- https://nexus-global.herokuapp.com/
+ ## Live Link :- https://nexus-zk5n.onrender.com
  
  
  ## Group members
