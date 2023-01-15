@@ -12,9 +12,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 
-from dotenv import load_dotenv
-
-load_dotenv()
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -92,10 +89,11 @@ WSGI_APPLICATION = 'nexus.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_USER_PASSWORD'),
-        'HOST': os.environ.get('DB_HOST'),
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'UlDKIZJyZP6cnLystLAD',
+        'HOST': 'containers-us-west-39.railway.app',
+        'PORT': '6276',
 
     }
 }
